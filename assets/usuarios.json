@@ -1,0 +1,38 @@
+[
+  {
+    "email": "teste123@gmail.com",
+    "senha": "teste123"
+  },
+  {
+    "email": "teste2@gmail.com",
+    "senha": "testeteste"
+  },
+  {
+    "email": "teste3@gmail.com",
+    "senha": "teste"
+  },
+  {
+    "email": "teste4@gmail.com",
+    "senha": "teste"
+  },
+  {
+    "email": "teste12345@gmail.com",
+    "senha": "teste123"
+  },
+  {
+    "email": "testefunciona@email.com",
+    "senha": "123"
+  },
+  {
+    "email": "teste@hotmail.com",
+    "senha": "1"
+  },
+  {
+    "email": "testenovo@gmail.com",
+    "senha": "123"
+  },
+  {
+    "email": "testeteste@gmail.com",
+    "senha": "123"
+  }
+]

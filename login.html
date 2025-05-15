@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Cripto - Login</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="assets/IMG/iconesite.png" />
+  </head>
+  <body>
+    <div class="fundo">
+      <div class="container-login">
+        <h2>Entre com a sua conta</h2>
+        <form id="form-login">
+          <div class="grupo-input">
+            <span class="icone">
+              <img src="assets/IMG/icone-pefil.png" alt="ícone de usuário" class="icone-img" />
+            </span>
+            <input type="email" placeholder="E-mail" required id="email" />
+          </div>
+          <div class="grupo-input">
+            <span class="icone">
+              <img src="assets/IMG/icone-senha.png" alt="ícone cadeado" class="icone-img2" />
+            </span>
+            <input type="password" placeholder="Senha" required id="senha" />
+            <span class="ver-senha" onclick="alternarSenha('senha', 'icone-olho')">
+              <img src="assets/IMG/olho.png" alt="ícone-olho" id="icone-olho" class="icone-img" />
+            </span>
+          </div>
+          <button type="submit" class="botao-login">Entrar</button>
+          <p class="texto-cadastro">
+            Não possui conta ainda? <a href="registro.html">Registre-se aqui</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

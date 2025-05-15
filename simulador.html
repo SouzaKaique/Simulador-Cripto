@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Cripto</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="assets/IMG/iconesite.png" />
+</head>
+<body class="fundo-principal">
+    <div class="fundo-wrapper">
+        <div class="fundo-imagem">
+            <header class="cabecalho">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#simulador">simulador</a></li>
+                        <li><a href="#glossario">glossário</a></li>
+                        <li><a href="#destaques">destaques</a></li>
+                    </ul>
+                    <div class="perfil-menu">
+                        <img src="assets/IMG/perfil.png" alt="Perfil" class="icone-perfil" id="icone-perfil" />
+                        <div class="dropdown" id="dropdown-menu">
+                            <a href="index.html">Sair</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main id="simulador" class="container">
+                <h1 class="titulo">SIMULADOR DE CONVERSÃO <br /> DE CRIPTOMOEDAS</h1>
+                <section class="simulador">
+                    <div class="box-simulador">
+                        <div class="dropdown-moedas">
+                            <label>MOEDAS</label>
+                            <input type="text" id="moeda-selecionada" class="dropdown-selecionado" readonly placeholder="Escolha a moeda" />
+                            <ul id="lista-moedas" class="dropdown-lista"></ul>
+                            <input type="hidden" id="moeda" value="" />
+                        </div>
+                        <div class="dropdown-moedas">
+                            <label>QUANTIDADE</label>
+                            <input type="number" id="quantidade" placeholder="Quantidade de moeda" />
+                        </div>
+                        <button class="botao-converter" id="botao-converter">Converter</button>
+                        <div class="resultados" id="resultado">
+                            <p id="resultado-brl">R$ 0.00</p>
+                            <span>|</span>
+                            <p id="resultado-usd">$ 0.00</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="info">
+                    <div class="historico">
+                        <h2>HISTÓRICO</h2>
+                        <ul id="lista-historico"></ul>
+                    </div>
+                    <div class="favoritas">
+                        <h2>FAVORITAS</h2>
+                        <ul id="lista-favoritas">
+                            <li></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="glossario" class="conteudo">
+                    <h1>GLOSSÁRIO CRIPTO</h1>
+                    <div class="fundo-cards">
+                        <div class="infos-glossario">
+                            <div class="card">
+                                <h2>Blockchain</h2>
+                                <p>Tecnologia que registra transações em blocos encadeados de forma descentralizada e segura.</p>
+                            </div>
+                            <div class="card">
+                                <h2>Criptomoeda</h2>
+                                <p>Moeda digital baseada em criptografia, que não depende de bancos ou governos para funcionar.</p>
+                            </div>
+                            <div class="card">
+                                <h2>Bitcoin (BTC)</h2>
+                                <p>Primeira criptomoeda criada, considerada uma reserva de valor no mundo cripto.</p>
+                            </div>
+                            <div class="card">
+                                <h2>Wallet (Carteira)</h2>
+                                <p>Ferramenta para armazenar e movimentar criptomoedas, pode ser digital ou física.</p>
+                            </div>
+                            <div class="card">
+                                <h2>Token</h2>
+                                <p>Ativo digital que pode representar utilidades ou valor em diferentes plataformas, geralmente sobre blockchains (ex: Ethereum).</p>
+                            </div>
+                            <div class="card">
+                                <h2>Altcoin</h2>
+                                <p>Qualquer criptomoeda que não seja o Bitcoin.</p>
+                            </div>
+                            <div class="card">
+                                <h2>Stablecoin</h2>
+                                <p>Moeda digital atrelada a um ativo estável (ex: dólar), como o USDT ou USDC.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="destaques" class="conteudo-moedas">
+                    <h1>MOEDAS EM DESTAQUE</h1>
+                    <div class="fundo-destaque">
+                        <div class="moeda">
+                            <img src="assets/IMG/bitcoin.png" alt="Ícone Bitcoin" />
+                            <h2>Bitcoin</h2>
+                        </div>
+                        <div class="moeda">
+                            <img src="assets/IMG/ethereum.png" alt="Ícone Ethereum" />
+                            <h2>Ethereum</h2>
+                        </div>
+                        <div class="moeda">
+                            <img src="assets/IMG/chainlink.png" alt="Ícone Chainlink" />
+                            <h2>Chainlink</h2>
+                        </div>
+                        <div class="moeda">
+                            <img src="assets/IMG/solana.png" alt="Ícone Solana" />
+                            <h2>Solana</h2>
+                        </div>
+                        <div class="moeda">
+                            <img src="assets/IMG/stellar.png" alt="Ícone Stellar" />
+                            <h2>Stellar</h2>
+                        </div>
+                        <div class="moeda">
+                            <img src="assets/IMG/aave.png" alt="Ícone AAVE" />
+                            <h2>AAVE</h2>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SIMULADOR DE CONVERSÃO DE CRIPTOMOEDAS</h3>
+                <p>Experimente o mundo das criptomoedas em um ambiente de simulação realista. <br>Teste suas estratégias e familiarize-se com <br> o mercado sem investir dinheiro real.</p>
+            </div>
+            <div class="footer-section navegacao">
+                <h3 class="titulo-navegacao">NAVEGAÇÃO</h3>
+                <ul>
+                    <li><a href="#simulador">Conversor de Moedas</a></li>
+                    <li><a href="#glossario">Glossário</a></li>
+                    <li><a href="#destaques">Moedas em Destaque</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contato">
+                <h3>CONTATO</h3>
+                <a href="https://www.linkedin.com/in/kaique-souzaa/" target="_blank" class="contato-link">
+                    <img src="assets/IMG/linkedin.png" alt="LinkedIn" class="contato-icone">
+                    <span class="nome">Kaique Souza</span>
+                </a>
+
+                <a href="https://www.instagram.com/kaaiquez/" target="_blank" class="contato-link">
+                    <img src="assets/IMG/instagram.png" alt="Instagram" class="contato-icone">
+                    <span class="nome">kaaiquez</span>
+                </a>
+
+                <a href="https://github.com/SouzaKaique" target="_blank" class="contato-link">
+                    <img src="assets/IMG/github.png" alt="Github" class="contato-icone">
+                    <span class="nome">SouzaKaique</span>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Desenvolvido por Kaique Souza</p>
+            <p>Dados fornecidos pela <a href="https://docs.coingecko.com/reference/introduction" target="_blank">CoinGecko API</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
